@@ -20,6 +20,7 @@
   "homepage": "https://github.com/jeanrvos/desafio-spendfy#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "knex": "^0.95.10",
     "nodemon": "^2.0.12"
   }
 }
