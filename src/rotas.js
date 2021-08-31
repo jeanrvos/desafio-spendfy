@@ -6,5 +6,6 @@ const rotas = express();
 
 rotas.post('/documents', documentos.cadastrarDocumento);
 rotas.get('/documents', documentos.listarDocumentos);
+rotas.get('/documents/:id', documentos.obterDocumento);
 
 module.exports = rotas;

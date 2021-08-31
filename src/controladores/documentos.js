@@ -41,7 +41,26 @@ const listarDocumentos = async (req, res) => {
     }
 }
 
+const obterDocumento = async (req, res) => {
+    const { id } = req.params;
+
+    try {
+
+        const documentoExistente = await knex('document').where({ id }).first();
+
+        if (!documentoExistente) {
+            return res.status(400).json("Documento não encontrado");
+        }
+
+        return res.status(200).json(documentoExistente);
+
+    } catch (error) {
+        return res.status(400).json(error.message);
+    }
+}
+
 module.exports = {
     cadastrarDocumento,
-    listarDocumentos
+    listarDocumentos,
+    obterDocumento
 };
