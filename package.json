@@ -1,0 +1,27 @@
+{
+  "name": "desafio-spendfy",
+  "version": "1.0.0",
+  "description": "Resolução do desafio spendfy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanrvos/desafio-spendfy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeanrvos/desafio-spendfy/issues"
+  },
+  "homepage": "https://github.com/jeanrvos/desafio-spendfy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.10",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1"
+  }
+}
