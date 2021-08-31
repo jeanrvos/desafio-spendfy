@@ -59,8 +59,33 @@ const obterDocumento = async (req, res) => {
     }
 }
 
+const excluirDocumento = async (req, res) => {
+    const { id } = req.params;
+
+    try {
+
+        const documentoExistente = await knex('document').where({ id }).first();
+
+        if (!documentoExistente) {
+            return res.status(400).json('Documento não encontrado');
+        }
+
+        const produtoExcluido = await knex('document').where({ id }).del();
+
+        if(!produtoExcluido) {
+            return res.status(400).json('Não foi possível excluir o documento. Tente novamente mais tarde.')
+        }
+
+        return res.status(200).json('Produto excluído com sucesso');
+
+    } catch (error) {
+        return res.status(400).json(error.message);
+    }
+}
+
 module.exports = {
     cadastrarDocumento,
     listarDocumentos,
-    obterDocumento
+    obterDocumento,
+    excluirDocumento
 };
