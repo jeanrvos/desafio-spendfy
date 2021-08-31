@@ -55,6 +55,6 @@ $ npm run dev
 
 ## Authors
 
-![Jean Velasco](https://avatars.githubusercontent.com/u/73435657?v=4)
-:---------------------:
-[Jean Velasco](https://github.com/jeanrvos)
+| ![Jean Velasco](https://avatars.githubusercontent.com/u/73435657?v=4)|
+|:---------------------:|
+|  [Jean Velasco](https://github.com/jeanrvos)   |
