@@ -1,6 +1,6 @@
 <h1 align="center">Spendfy Docs</h1>
 
-<p align="center">API para cadastro de  documentos</p>
+<p align="center">API para cadastro de  documentos e cálculo do dia da semana</p>
 
 ### Início
 
@@ -26,17 +26,22 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Nodemon](https://nodemon.io/)
 ### Features
 
+##### - API Documentos
+
 - [x] Cadastro de documento
 - [x] Listagem de documentos cadastrados
 - [x] Listar documento por id
 - [x] Excluir documento por id
+
+##### - Cálculo dia da semana
+
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 🎲 Rodando o Back End (servidor)
+### Rodando o Back End (servidor)
 
 ```bash
 # Clone este repositório
@@ -52,9 +57,9 @@ $ npm install
 $ npm run dev
 
 # O servidor iniciará na porta:3000 - acesse <http://localhost:3000>
+```
+## Author
 
-## Authors
-
-![Jean Velasco](https://avatars.githubusercontent.com/u/73435657?v=4)
+|![Jean Velasco](https://avatars.githubusercontent.com/u/73435657?v=4)
 :---------------------:
 [Jean Velasco](https://github.com/jeanrvos)
