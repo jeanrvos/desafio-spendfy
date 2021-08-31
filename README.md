@@ -53,8 +53,6 @@ $ npm run dev
 
 # O servidor iniciará na porta:3000 - acesse <http://localhost:3000>
 
-## Authors
+## Author
 
-| ![Jean Velasco](https://avatars.githubusercontent.com/u/73435657?v=4)|
-|:---------------------:|
-|  [Jean Velasco](https://github.com/jeanrvos)   |
+[Jean Velasco](https://github.com/jeanrvos)
