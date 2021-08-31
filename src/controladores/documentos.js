@@ -28,4 +28,20 @@ const cadastrarDocumento = async (req, res) => {
     }
 }
 
-module.exports = { cadastrarDocumento };
+const listarDocumentos = async (req, res) => {
+
+    try {
+
+        const listaDocumentos = await knex('document');
+
+        return res.status(200).json(listaDocumentos);
+
+    } catch (error) {
+        return res.status(400).json(error.message);
+    }
+}
+
+module.exports = {
+    cadastrarDocumento,
+    listarDocumentos
+};
